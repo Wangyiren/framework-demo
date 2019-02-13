@@ -78,7 +78,7 @@ dubbo:
 ```
 
 
-## 1.6 sentinel dubbo
+## 1.7 sentinel dubbo
 https://github.com/spring-cloud-incubator/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-examples/sentinel-example/sentinel-dubbo-example/readme-zh.md
 
 
