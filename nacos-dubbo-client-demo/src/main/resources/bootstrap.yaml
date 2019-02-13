@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: nacos-dubbo-client-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        group: FAT_GROUP
+        file-extension: yaml
+  profiles:
+    active: fat
+
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+#    address: zookeeper://127.0.0.1:2181
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud: DEBUG
